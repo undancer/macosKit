@@ -25,6 +25,15 @@ class StatusMenuController: NSObject {
         statusItem.menu = statusMenu;
         
         preferences = (NSStoryboard.main!.instantiateController(withIdentifier: "Preferences") as! PreferencesWindowController);
+
+        Timer.scheduledTimer(withTimeInterval: 1 , repeats: true) { (timer) in
+            let time = timer.fireDate.description(with: Locale.current);
+            
+            
+            
+            button.title = time;
+        }
+        
     }
     
     @IBAction func openPreferences(_ sender: Any) {
