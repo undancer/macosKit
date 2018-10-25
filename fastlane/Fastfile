@@ -13,11 +13,15 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
-default_platform(:ios)
+# default_platform(:ios)
+default_platform(:mac)
 
-platform :ios do
-  desc "Generate new localized screenshots"
-  lane :screenshots do
-    capture_screenshots(scheme: "macosKit")
+platform :mac do
+  desc "test"
+  lane :test do
+    carthage(
+      platform: "mac"
+    )
+
   end
 end
