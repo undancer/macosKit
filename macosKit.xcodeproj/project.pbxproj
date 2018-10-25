@@ -13,6 +13,8 @@
 		E49723BE2181A7070098692D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49723BC2181A7070098692D /* Main.storyboard */; };
 		E49723CA2181A7070098692D /* macosKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49723C92181A7070098692D /* macosKitTests.swift */; };
 		E49723D52181A7070098692D /* macosKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49723D42181A7070098692D /* macosKitUITests.swift */; };
+		E49723E32181B6AD0098692D /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49723E22181B6AD0098692D /* PreferencesWindowController.swift */; };
+		E49723E52181B6DF0098692D /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49723E42181B6DF0098692D /* StatusMenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		E49723D02181A7070098692D /* macosKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macosKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49723D42181A7070098692D /* macosKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macosKitUITests.swift; sourceTree = "<group>"; };
 		E49723D62181A7070098692D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49723E22181B6AD0098692D /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		E49723E42181B6DF0098692D /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		E49723E62181B8580098692D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		E49723E92181B9B10098692D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,8 @@
 				E49723BC2181A7070098692D /* Main.storyboard */,
 				E49723BF2181A7070098692D /* Info.plist */,
 				E49723C02181A7070098692D /* macosKit.entitlements */,
+				E49723E22181B6AD0098692D /* PreferencesWindowController.swift */,
+				E49723E42181B6DF0098692D /* StatusMenuController.swift */,
 			);
 			path = macosKit;
 			sourceTree = "<group>";
@@ -208,7 +216,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = E49723AA2181A7060098692D;
@@ -254,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49723E32181B6AD0098692D /* PreferencesWindowController.swift in Sources */,
 				E49723B92181A7060098692D /* ViewController.swift in Sources */,
+				E49723E52181B6DF0098692D /* StatusMenuController.swift in Sources */,
 				E49723B72181A7060098692D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +304,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E49723BD2181A7070098692D /* Base */,
+				E49723E62181B8580098692D /* zh-Hans */,
+				E49723E92181B9B10098692D /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -306,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -367,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
